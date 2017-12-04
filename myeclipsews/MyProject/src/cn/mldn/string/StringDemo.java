@@ -3,7 +3,12 @@ package cn.mldn.string;
 public class StringDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		String stra = new String("hello").intern();
+		
+		String strb = "hello";
+		
+		System.out.println(stra==strb);
 
 	}
 
