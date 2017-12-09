@@ -11,7 +11,7 @@ public class TestDemo {
 //		Book bookb = new Book();
 //		System.out.println("bookb = " + bookb);
 //		bookb.print();
-		A temp = new A();
+//		A temp = new A();
 		
 	}
 
