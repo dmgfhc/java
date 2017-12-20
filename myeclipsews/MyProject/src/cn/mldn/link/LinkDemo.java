@@ -3,36 +3,27 @@ package cn.mldn.link;
 public class LinkDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-//		Node root = new Node("火车头");
-//		
-//		Node n1 = new Node("车厢A");
-//		
-//		Node n2 = new Node("车厢B");
-//		
-//		
-//		root.setNext(n1);
-//		
-//		n1.setNext(n2);
+		Link all = new Link();
 		
-//		Node currentNode = root;
+		all.add(new Book("JAVA开发",79.8));
 		
-//		while(currentNode!=null) {
-//			System.out.println(currentNode.getDate());
-//			currentNode = currentNode.getNext();
-//		}
+		all.add(new Book("JSP开发",69.8));
 		
-		//print(root);
+		all.add(new Book("ORACLE开发",89.8));
 		
-		Link link = new Link();
+		System.out.println("保存书的个数：" + all.size());
 		
-		link.add("hello");
-		link.add("WORLD");
-		link.add("MLDN");
-		link.add("www");
+		System.out.println(all.contains(new Book("JAVA开发",79.8)));
 		
-		link.print();
+	//	all.remove(new Book("ORACLE开发",89.8));
+		
+		Book[] books = all.toArray();
+		
+		for(int i=0;i<books.length;i++) {
+			System.out.println(books[i].getInfo());
+		}
+		
 		
 		
 		
