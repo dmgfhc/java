@@ -19,11 +19,19 @@ public class TestDemo {
 //		
 //		System.out.println(a instanceof B );
 		
-		Computer com = new Computer();
+//		Computer com = new Computer();
+//		
+//		com.plugin(new Flash());
+//		
+//		com.plugin(new Print());
 		
-		com.plugin(new Flash());
+//		Subject subject = new ProxySubject(new RealSubject());
+//		
+//		subject.make();
 		
-		com.plugin(new Print());
+	Fruit fruit = Factory.getInstance("orange");	
+	
+	fruit.eat();
 		
 		
 		
