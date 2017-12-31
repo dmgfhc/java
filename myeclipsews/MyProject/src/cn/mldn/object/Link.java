@@ -63,9 +63,6 @@ class Link{
 			}
 		}
 		
-		
-		
-		
 	}
 	
 	private Node root;

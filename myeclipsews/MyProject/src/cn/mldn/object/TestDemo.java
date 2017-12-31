@@ -4,19 +4,42 @@ public class TestDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Link all = new Link();
+//		Link all = new Link();
+//		
+//		all.add("A");
+//		
+//		all.add("B");
+//		
+//		all.add("C");
+//		
+//		Object[] data = all.toArray();
+//		
+//		for(int x=0;x<data.length;x++) {
+//			String str = (String)data[x];
+//			System.out.println(str.toString());
+//		}
 		
-		all.add("A");
+		PetShop shop = new PetShop();
 		
-		all.add("B");
+		shop.add(new Cat("ÍõÃ¨",10));
 		
-		all.add("C");
+		shop.add(new Cat("¾ªÃ¨",20));
 		
-		Object[] data = all.toArray();
+		shop.add(new Cat("À×Ã¨",30));
 		
-		for(int x=0;x<data.length;x++) {
-			String str = (String)data[x];
-			System.out.println(str.toString());
+		shop.add(new Dog("Íõ¹·",10));
+		
+		shop.add(new Dog("¾ª¹·",20));
+		
+		shop.add(new Dog("À×¹·",30));
+		
+		Link all = shop.search("Íõ");
+		
+		Object obj[] = all.toArray();
+		
+		for(int x =0;x<obj.length;x++) {
+			
+			System.out.println(obj[x]);
 		}
 		
 		
